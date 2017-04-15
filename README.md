@@ -1,11 +1,13 @@
 # api documentation for  [bl (v1.2.0)](https://github.com/rvagg/bl)  [![npm package](https://img.shields.io/npm/v/npmdoc-bl.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-bl) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-bl.svg)](https://travis-ci.org/npmdoc/node-npmdoc-bl)
 #### Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!
 
-[![NPM](https://nodei.co/npm/bl.png?downloads=true)](https://www.npmjs.com/package/bl)
+[![NPM](https://nodei.co/npm/bl.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/bl)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-bl/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-bl_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-bl/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-bl/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-bl/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-bl/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-bl/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-bl/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -48,17 +50,14 @@
     "main": "bl.js",
     "maintainers": [
         {
-            "name": "matteo.collina",
-            "email": "hello@matteocollina.com"
+            "name": "matteo.collina"
         },
         {
-            "name": "rvagg",
-            "email": "rod@vagg.org"
+            "name": "rvagg"
         }
     ],
     "name": "bl",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/rvagg/bl.git"
@@ -75,9 +74,14 @@
 # <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
 
 #### [module bl](#apidoc.module.bl)
+1.  [function <span class="apidocSignatureSpan"></span>bl (callback)](#apidoc.element.bl.bl)
 1.  [function <span class="apidocSignatureSpan">bl.</span>super_ (options)](#apidoc.element.bl.super_)
 1.  [function <span class="apidocSignatureSpan">bl.</span>super_.super_ (options)](#apidoc.element.bl.super_.super_)
+1.  [function <span class="apidocSignatureSpan">bl.</span>toString ()](#apidoc.element.bl.toString)
 1.  object <span class="apidocSignatureSpan">bl.</span>super_.prototype
+1.  object <span class="apidocSignatureSpan">bl.</span>super_.super_.PassThrough.prototype
+1.  object <span class="apidocSignatureSpan">bl.</span>super_.super_.Transform.prototype
+1.  object <span class="apidocSignatureSpan">bl.</span>super_.super_.Writable.prototype
 1.  object <span class="apidocSignatureSpan">bl.</span>super_.super_.prototype
 
 #### [module bl.super_](#apidoc.module.bl.super_)
@@ -94,8 +98,33 @@
 
 #### [module bl.super_.super_](#apidoc.module.bl.super_.super_)
 1.  [function <span class="apidocSignatureSpan">bl.super_.</span>super_ ()](#apidoc.element.bl.super_.super_.super_)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>Duplex (options)](#apidoc.element.bl.super_.super_.Duplex)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>PassThrough (options)](#apidoc.element.bl.super_.super_.PassThrough)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>Readable (options)](#apidoc.element.bl.super_.super_.Readable)
 1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>ReadableState (options, stream)](#apidoc.element.bl.super_.super_.ReadableState)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>Stream ()](#apidoc.element.bl.super_.super_.Stream)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>Transform (options)](#apidoc.element.bl.super_.super_.Transform)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>Writable (options)](#apidoc.element.bl.super_.super_.Writable)
 1.  [function <span class="apidocSignatureSpan">bl.super_.super_.</span>_fromList (n, state)](#apidoc.element.bl.super_.super_._fromList)
+
+#### [module bl.super_.super_.PassThrough.prototype](#apidoc.module.bl.super_.super_.PassThrough.prototype)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.PassThrough.prototype.</span>_transform (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.PassThrough.prototype._transform)
+
+#### [module bl.super_.super_.Transform.prototype](#apidoc.module.bl.super_.super_.Transform.prototype)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_read (n)](#apidoc.element.bl.super_.super_.Transform.prototype._read)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_transform (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Transform.prototype._transform)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Transform.prototype._write)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>push (chunk, encoding)](#apidoc.element.bl.super_.super_.Transform.prototype.push)
+
+#### [module bl.super_.super_.Writable.prototype](#apidoc.module.bl.super_.super_.Writable.prototype)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>_write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype._write)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>cork ()](#apidoc.element.bl.super_.super_.Writable.prototype.cork)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>end (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype.end)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>pipe ()](#apidoc.element.bl.super_.super_.Writable.prototype.pipe)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>setDefaultEncoding (encoding)](#apidoc.element.bl.super_.super_.Writable.prototype.setDefaultEncoding)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>uncork ()](#apidoc.element.bl.super_.super_.Writable.prototype.uncork)
+1.  [function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype.write)
+1.  object <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>_writev
 
 #### [module bl.super_.super_.prototype](#apidoc.module.bl.super_.super_.prototype)
 1.  [function <span class="apidocSignatureSpan">bl.super_.super_.prototype.</span>_read (n)](#apidoc.element.bl.super_.super_.prototype._read)
@@ -115,6 +144,44 @@
 
 
 # <a name="apidoc.module.bl"></a>[module bl](#apidoc.module.bl)
+
+#### <a name="apidoc.element.bl.bl"></a>[function <span class="apidocSignatureSpan"></span>bl (callback)](#apidoc.element.bl.bl)
+- description and source-code
+```javascript
+function BufferList(callback) {
+  if (!(this instanceof BufferList))
+    return new BufferList(callback)
+
+  this._bufs  = []
+  this.length = 0
+
+  if (typeof callback == 'function') {
+    this._callback = callback
+
+    var piper = function piper (err) {
+      if (this._callback) {
+        this._callback(err)
+        this._callback = null
+      }
+    }.bind(this)
+
+    this.on('pipe', function onPipe (src) {
+      src.on('error', piper)
+    })
+    this.on('unpipe', function onUnpipe (src) {
+      src.removeListener('error', piper)
+    })
+  } else {
+    this.append(callback)
+  }
+
+  DuplexStream.call(this)
+}
+```
+- example usage
+```shell
+n/a
+```
 
 #### <a name="apidoc.element.bl.super_"></a>[function <span class="apidocSignatureSpan">bl.</span>super_ (options)](#apidoc.element.bl.super_)
 - description and source-code
@@ -161,6 +228,34 @@ function Readable(options) {
 - example usage
 ```shell
 n/a
+```
+
+#### <a name="apidoc.element.bl.toString"></a>[function <span class="apidocSignatureSpan">bl.</span>toString ()](#apidoc.element.bl.toString)
+- description and source-code
+```javascript
+toString = function () {
+    return toString;
+}
+```
+- example usage
+```shell
+...
+bl.append(new Buffer('efg'))
+bl.append('hi')                     // bl will also accept & convert Strings
+bl.append(new Buffer('j'))
+bl.append(new Buffer([ 0x3, 0x4 ]))
+
+console.log(bl.length) // 12
+
+console.log(bl.slice(0, 10).toString('ascii')) // 'abcdefghij'
+console.log(bl.slice(3, 10).toString('ascii')) // 'defghij'
+console.log(bl.slice(3, 6).toString('ascii'))  // 'def'
+console.log(bl.slice(3, 8).toString('ascii'))  // 'defgh'
+console.log(bl.slice(5, 10).toString('ascii')) // 'fghij'
+
+// or just use toString!
+console.log(bl.toString())               // 'abcdefghij\u0003\u0004'
+...
 ```
 
 
@@ -358,6 +453,67 @@ function Stream() {
 n/a
 ```
 
+#### <a name="apidoc.element.bl.super_.super_.Duplex"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>Duplex (options)](#apidoc.element.bl.super_.super_.Duplex)
+- description and source-code
+```javascript
+function Duplex(options) {
+  if (!(this instanceof Duplex)) return new Duplex(options);
+
+  Readable.call(this, options);
+  Writable.call(this, options);
+
+  if (options && options.readable === false) this.readable = false;
+
+  if (options && options.writable === false) this.writable = false;
+
+  this.allowHalfOpen = true;
+  if (options && options.allowHalfOpen === false) this.allowHalfOpen = false;
+
+  this.once('end', onend);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.PassThrough"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>PassThrough (options)](#apidoc.element.bl.super_.super_.PassThrough)
+- description and source-code
+```javascript
+function PassThrough(options) {
+  if (!(this instanceof PassThrough)) return new PassThrough(options);
+
+  Transform.call(this, options);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Readable"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>Readable (options)](#apidoc.element.bl.super_.super_.Readable)
+- description and source-code
+```javascript
+function Readable(options) {
+  Duplex = Duplex || require('./_stream_duplex');
+
+  if (!(this instanceof Readable)) return new Readable(options);
+
+  this._readableState = new ReadableState(options, this);
+
+  // legacy
+  this.readable = true;
+
+  if (options && typeof options.read === 'function') this._read = options.read;
+
+  Stream.call(this);
+}
+```
+- example usage
+```shell
+n/a
+```
+
 #### <a name="apidoc.element.bl.super_.super_.ReadableState"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>ReadableState (options, stream)](#apidoc.element.bl.super_.super_.ReadableState)
 - description and source-code
 ```javascript
@@ -435,6 +591,93 @@ function ReadableState(options, stream) {
 n/a
 ```
 
+#### <a name="apidoc.element.bl.super_.super_.Stream"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>Stream ()](#apidoc.element.bl.super_.super_.Stream)
+- description and source-code
+```javascript
+function Stream() {
+  EE.call(this);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Transform"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>Transform (options)](#apidoc.element.bl.super_.super_.Transform)
+- description and source-code
+```javascript
+function Transform(options) {
+  if (!(this instanceof Transform)) return new Transform(options);
+
+  Duplex.call(this, options);
+
+  this._transformState = new TransformState(this);
+
+  var stream = this;
+
+  // start out asking for a readable event once data is transformed.
+  this._readableState.needReadable = true;
+
+  // we have implemented the _read method, and done the other things
+  // that Readable wants before the first _read call, so unset the
+  // sync guard flag.
+  this._readableState.sync = false;
+
+  if (options) {
+    if (typeof options.transform === 'function') this._transform = options.transform;
+
+    if (typeof options.flush === 'function') this._flush = options.flush;
+  }
+
+  // When the writable side finishes, then flush out anything remaining.
+  this.once('prefinish', function () {
+    if (typeof this._flush === 'function') this._flush(function (er, data) {
+      done(stream, er, data);
+    });else done(stream);
+  });
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>Writable (options)](#apidoc.element.bl.super_.super_.Writable)
+- description and source-code
+```javascript
+function Writable(options) {
+  Duplex = Duplex || require('./_stream_duplex');
+
+  // Writable ctor is applied to Duplexes, too.
+  // 'realHasInstance' is necessary because using plain 'instanceof'
+  // would return false, as no '_writableState' property is attached.
+
+  // Trying to use the custom 'instanceof' for Writable here will also break the
+  // Node.js LazyTransform implementation, which has a non-trivial getter for
+  // '_writableState' that would lead to infinite recursion.
+  if (!realHasInstance.call(Writable, this) && !(this instanceof Duplex)) {
+    return new Writable(options);
+  }
+
+  this._writableState = new WritableState(options, this);
+
+  // legacy.
+  this.writable = true;
+
+  if (options) {
+    if (typeof options.write === 'function') this._write = options.write;
+
+    if (typeof options.writev === 'function') this._writev = options.writev;
+  }
+
+  Stream.call(this);
+}
+```
+- example usage
+```shell
+n/a
+```
+
 #### <a name="apidoc.element.bl.super_.super_._fromList"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.</span>_fromList (n, state)](#apidoc.element.bl.super_.super_._fromList)
 - description and source-code
 ```javascript
@@ -451,6 +694,287 @@ function fromList(n, state) {
   } else {
     // read part of list
     ret = fromListPartial(n, state.buffer, state.decoder);
+  }
+
+  return ret;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+
+
+# <a name="apidoc.module.bl.super_.super_.PassThrough.prototype"></a>[module bl.super_.super_.PassThrough.prototype](#apidoc.module.bl.super_.super_.PassThrough.prototype)
+
+#### <a name="apidoc.element.bl.super_.super_.PassThrough.prototype._transform"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.PassThrough.prototype.</span>_transform (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.PassThrough.prototype._transform)
+- description and source-code
+```javascript
+_transform = function (chunk, encoding, cb) {
+  cb(null, chunk);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+
+
+# <a name="apidoc.module.bl.super_.super_.Transform.prototype"></a>[module bl.super_.super_.Transform.prototype](#apidoc.module.bl.super_.super_.Transform.prototype)
+
+#### <a name="apidoc.element.bl.super_.super_.Transform.prototype._read"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_read (n)](#apidoc.element.bl.super_.super_.Transform.prototype._read)
+- description and source-code
+```javascript
+_read = function (n) {
+  var ts = this._transformState;
+
+  if (ts.writechunk !== null && ts.writecb && !ts.transforming) {
+    ts.transforming = true;
+    this._transform(ts.writechunk, ts.writeencoding, ts.afterTransform);
+  } else {
+    // mark that we need a transform, so that any data that comes in
+    // will get processed, now that we've asked for it.
+    ts.needTransform = true;
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Transform.prototype._transform"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_transform (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Transform.prototype._transform)
+- description and source-code
+```javascript
+_transform = function (chunk, encoding, cb) {
+  throw new Error('_transform() is not implemented');
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Transform.prototype._write"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>_write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Transform.prototype._write)
+- description and source-code
+```javascript
+_write = function (chunk, encoding, cb) {
+  var ts = this._transformState;
+  ts.writecb = cb;
+  ts.writechunk = chunk;
+  ts.writeencoding = encoding;
+  if (!ts.transforming) {
+    var rs = this._readableState;
+    if (ts.needTransform || rs.needReadable || rs.length < rs.highWaterMark) this._read(rs.highWaterMark);
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Transform.prototype.push"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Transform.prototype.</span>push (chunk, encoding)](#apidoc.element.bl.super_.super_.Transform.prototype.push)
+- description and source-code
+```javascript
+push = function (chunk, encoding) {
+  this._transformState.needTransform = false;
+  return Duplex.prototype.push.call(this, chunk, encoding);
+}
+```
+- example usage
+```shell
+...
+}
+
+return this
+}
+
+
+BufferList.prototype._appendBuffer = function appendBuffer (buf) {
+this._bufs.push(buf)
+this.length += buf.length
+}
+
+
+BufferList.prototype._write = function _write (buf, encoding, callback) {
+this._appendBuffer(buf)
+...
+```
+
+
+
+# <a name="apidoc.module.bl.super_.super_.Writable.prototype"></a>[module bl.super_.super_.Writable.prototype](#apidoc.module.bl.super_.super_.Writable.prototype)
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype._write"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>_write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype._write)
+- description and source-code
+```javascript
+_write = function (chunk, encoding, cb) {
+  cb(new Error('_write() is not implemented'));
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.cork"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>cork ()](#apidoc.element.bl.super_.super_.Writable.prototype.cork)
+- description and source-code
+```javascript
+cork = function () {
+  var state = this._writableState;
+
+  state.corked++;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.end"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>end (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype.end)
+- description and source-code
+```javascript
+end = function (chunk, encoding, cb) {
+  var state = this._writableState;
+
+  if (typeof chunk === 'function') {
+    cb = chunk;
+    chunk = null;
+    encoding = null;
+  } else if (typeof encoding === 'function') {
+    cb = encoding;
+    encoding = null;
+  }
+
+  if (chunk !== null && chunk !== undefined) this.write(chunk, encoding);
+
+  // .end() fully uncorks
+  if (state.corked) {
+    state.corked = 1;
+    this.uncork();
+  }
+
+  // ignore unnecessary end() calls.
+  if (!state.ending && !state.finished) endWritable(this, state, cb);
+}
+```
+- example usage
+```shell
+...
+  * <a href="#toString"><code>bl.<b>toString([encoding, [ start, [ end ]]])</b></code></a>
+  * <a href="#readXX"><code>bl.<b>readDoubleBE()</b></code>, <code>bl.<b>readDoubleLE()</b></code>, <code>bl.<b>readFloatBE()</b
+></code>, <code>bl.<b>readFloatLE()</b></code>, <code>bl.<b>readInt32BE()</b></code>, <code>bl.<b>readInt32LE()</b></code>, <code
+>bl.<b>readUInt32BE()</b></code>, <code>bl.<b>readUInt32LE()</b></code>, <code>bl.<b>readInt16BE()</b></code>, <code>bl.<b>readInt16LE
+()</b></code>, <code>bl.<b>readUInt16BE()</b></code>, <code>bl.<b>readUInt16LE()</b></code>, <code>bl.<b>readInt8()</b></code>, <
+code>bl.<b>readUInt8()</b></code></a>
+  * <a href="#streams">Streams</a>
+
+--------------------------------------------------------
+<a name="ctor"></a>
+### new BufferList([ callback | Buffer | Buffer array | BufferList | BufferList array | String ])
+The constructor takes an optional callback, if supplied, the callback will be called with an error argument followed by a reference
+ to the **bl** instance, when 'bl.end()' is called (i.e. from a piped stream). This is a convenient method of collecting the entire
+ contents of a stream, particularly when the stream is *chunky*, such as a network stream.
+
+Normally, no arguments are required for the constructor, but you can initialise the list by passing in a single 'Buffer' object
+or an array of 'Buffer' object.
+
+'new' is not strictly required, if you don't instantiate a new object, it will be done automatically for you so you can create a
+ new instance simply with:
+
+'''js
+var bl = require('bl')
+...
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.pipe"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>pipe ()](#apidoc.element.bl.super_.super_.Writable.prototype.pipe)
+- description and source-code
+```javascript
+pipe = function () {
+  this.emit('error', new Error('Cannot pipe, not readable'));
+}
+```
+- example usage
+```shell
+...
+Give it a callback in the constructor and use it just like **[concat-stream](https://github.com/maxogden/node-concat-stream)**:
+
+'''js
+const bl = require('bl')
+    , fs = require('fs')
+
+fs.createReadStream('README.md')
+  .pipe(bl(function (err, data) { // note 'new' isn't strictly required
+    // 'data' is a complete Buffer object containing the full data
+    console.log(data.toString())
+  }))
+'''
+
+Note that when you use the *callback* method like this, the resulting 'data' parameter is a concatenation of all 'Buffer' objects
+ in the list. If you want to avoid the overhead of this concatenation (in cases of extreme performance consciousness), then avoid
+ the *callback* method and just listen to ''end'' instead, like a standard Stream.
+...
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.setDefaultEncoding"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>setDefaultEncoding (encoding)](#apidoc.element.bl.super_.super_.Writable.prototype.setDefaultEncoding)
+- description and source-code
+```javascript
+function setDefaultEncoding(encoding) {
+  // node::ParseEncoding() requires lower case.
+  if (typeof encoding === 'string') encoding = encoding.toLowerCase();
+  if (!(['hex', 'utf8', 'utf-8', 'ascii', 'binary', 'base64', 'ucs2', 'ucs-2', 'utf16le', 'utf-16le', 'raw'].indexOf((encoding + '').
+toLowerCase()) > -1)) throw new TypeError('Unknown encoding: ' + encoding);
+  this._writableState.defaultEncoding = encoding;
+  return this;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.uncork"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>uncork ()](#apidoc.element.bl.super_.super_.Writable.prototype.uncork)
+- description and source-code
+```javascript
+uncork = function () {
+  var state = this._writableState;
+
+  if (state.corked) {
+    state.corked--;
+
+    if (!state.writing && !state.corked && !state.finished && !state.bufferProcessing && state.bufferedRequest) clearBuffer(this
+, state);
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.bl.super_.super_.Writable.prototype.write"></a>[function <span class="apidocSignatureSpan">bl.super_.super_.Writable.prototype.</span>write (chunk, encoding, cb)](#apidoc.element.bl.super_.super_.Writable.prototype.write)
+- description and source-code
+```javascript
+write = function (chunk, encoding, cb) {
+  var state = this._writableState;
+  var ret = false;
+  var isBuf = Buffer.isBuffer(chunk);
+
+  if (typeof encoding === 'function') {
+    cb = encoding;
+    encoding = null;
+  }
+
+  if (isBuf) encoding = 'buffer';else if (!encoding) encoding = state.defaultEncoding;
+
+  if (typeof cb !== 'function') cb = nop;
+
+  if (state.ended) writeAfterEnd(this, cb);else if (isBuf || validChunk(this, state, chunk, cb)) {
+    state.pendingcb++;
+    ret = writeOrBuffer(this, state, isBuf, chunk, encoding, cb);
   }
 
   return ret;
@@ -1035,10 +1559,9 @@ wrap = function (stream) {
   }
 
   // proxy certain important events.
-  var events = ['error', 'close', 'destroy', 'pause', 'resume'];
-  forEach(events, function (ev) {
-    stream.on(ev, self.emit.bind(self, ev));
-  });
+  for (var n = 0; n < kProxyEvents.length; n++) {
+    stream.on(kProxyEvents[n], self.emit.bind(self, kProxyEvents[n]));
+  }
 
   // when we try to consume some more bytes, simply unpause the
   // underlying stream.
