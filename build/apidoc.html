@@ -90,15 +90,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.bl.toString">
-            function <span class="apidocSignatureSpan">bl.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bl.</span>super_.prototype</span>
 
         </li>
@@ -634,37 +625,6 @@
   Stream.call(this);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.bl.toString" id="apidoc.element.bl.toString">
-        function <span class="apidocSignatureSpan">bl.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return toString;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-bl.append(new Buffer(&#x27;efg&#x27;))
-bl.append(&#x27;hi&#x27;)                     // bl will also accept &#x26; convert Strings
-bl.append(new Buffer(&#x27;j&#x27;))
-bl.append(new Buffer([ 0x3, 0x4 ]))
-
-console.log(bl.length) // 12
-
-console.log(bl.slice(0, 10).<span class="apidocCodeKeywordSpan">toString</span>(&#x27;ascii&#x27;)) // &#x27;abcdefghij&#x27;
-console.log(bl.slice(3, 10).toString(&#x27;ascii&#x27;)) // &#x27;defghij&#x27;
-console.log(bl.slice(3, 6).toString(&#x27;ascii&#x27;))  // &#x27;def&#x27;
-console.log(bl.slice(3, 8).toString(&#x27;ascii&#x27;))  // &#x27;defgh&#x27;
-console.log(bl.slice(5, 10).toString(&#x27;ascii&#x27;)) // &#x27;fghij&#x27;
-
-// or just use toString!
-console.log(bl.toString())               // &#x27;abcdefghij\u0003\u0004&#x27;
-...</pre></li>
     </ul>
 
 
